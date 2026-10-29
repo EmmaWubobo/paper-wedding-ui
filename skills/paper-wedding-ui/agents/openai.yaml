@@ -1,0 +1,4 @@
+interface:
+  display_name: "纸感婚礼 UI 图纸"
+  short_description: "自定义婚礼资料与功能模块，生成纸感复古风小程序高清长图和设计规格"
+  default_prompt: "使用 $paper-wedding-ui 根据我的婚礼资料和功能需求生成高清小程序UI图纸；缺失信息保留占位词。"

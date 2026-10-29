@@ -1,0 +1,918 @@
+{
+  "project": "纸感婚礼小程序 UI",
+  "locale": "zh",
+  "width": 390,
+  "scale": 3,
+  "people": {
+    "male": "姓名（男）",
+    "female": "姓名（女）",
+    "english": "Name & Name"
+  },
+  "date": "日期",
+  "address": "婚宴地址",
+  "contact": "联系方式",
+  "previewPhotos": false,
+  "photos": {},
+  "navigation": [
+    {
+      "id": "invitation",
+      "label": "请柬",
+      "icon": "✉"
+    },
+    {
+      "id": "travel",
+      "label": "赴约",
+      "icon": "⌂"
+    },
+    {
+      "id": "album",
+      "label": "相册",
+      "icon": "▧"
+    },
+    {
+      "id": "mine",
+      "label": "我的",
+      "icon": "♧"
+    }
+  ],
+  "pages": [
+    {
+      "id": "invitation",
+      "title": "请柬",
+      "modules": [
+        {
+          "type": "hero",
+          "title": "诚挚邀请"
+        },
+        {
+          "type": "story",
+          "lines": [
+            "在这里，写下相遇的故事。",
+            "在这里，写下想与亲友分享的话。"
+          ],
+          "motto": "Love, written together.",
+          "photo": "portrait"
+        },
+        {
+          "type": "date",
+          "photo": "detail",
+          "note": "婚礼故事短句"
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "time": "时间",
+              "title": "宾客签到",
+              "note": "签到地点与说明"
+            },
+            {
+              "time": "时间",
+              "title": "婚礼仪式",
+              "note": "仪式安排说明"
+            },
+            {
+              "time": "时间",
+              "title": "婚宴开始",
+              "note": "宴会安排说明"
+            }
+          ]
+        },
+        {
+          "type": "photo",
+          "photo": "wide",
+          "ratio": 1.5
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "title": "相聚地点",
+              "note": "{{address}}",
+              "page": "venue"
+            },
+            {
+              "title": "为你留一晚好眠",
+              "note": "酒店名称与入住安排",
+              "page": "hotel"
+            },
+            {
+              "title": "婚礼之外，也好逛",
+              "note": "推荐地点与散步路线",
+              "page": "city"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "收下邀请 · 告诉我们你会来",
+          "page": "travel"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "赴约",
+      "modules": [
+        {
+          "type": "intro",
+          "eyebrow": "ON YOUR WAY",
+          "title": "一路过来，辛苦啦。",
+          "subtitle": "住在哪里、如何抵达，都为你放在这里。"
+        },
+        {
+          "type": "status",
+          "title": "赴约回执 · 到达信息",
+          "value": "待填写",
+          "page": "rsvp"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "title": "婚礼场地",
+              "note": "{{address}}",
+              "page": "venue"
+            },
+            {
+              "title": "为你安排的住宿",
+              "note": "酒店名称、入住时间",
+              "page": "hotel"
+            },
+            {
+              "title": "亲友集合地点",
+              "note": "集合地址与集合时间",
+              "page": "meetup"
+            },
+            {
+              "title": "抵达指南",
+              "note": "推荐车站、机场与自驾目的地",
+              "page": "stations"
+            },
+            {
+              "title": "我们喜欢的这座城",
+              "note": "推荐店铺、公园与散步路线",
+              "page": "city"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "需要接送或特别照顾，可以在到达登记里告诉我们。联系：{{contact}}"
+        },
+        {
+          "type": "button",
+          "text": "看看我的接送情况",
+          "secondary": true,
+          "page": "pickup"
+        },
+        {
+          "type": "form",
+          "title": "填写接送信息",
+          "fields": [
+            {
+              "label": "姓名",
+              "placeholder": "宾客姓名"
+            },
+            {
+              "label": "联系方式",
+              "placeholder": "宾客联系方式"
+            },
+            {
+              "label": "到达时间与站点",
+              "placeholder": "日期、时间、车站"
+            },
+            {
+              "label": "备注",
+              "placeholder": "同行人数与其他需求",
+              "multiline": true
+            }
+          ],
+          "button": "提交接送信息"
+        }
+      ]
+    },
+    {
+      "id": "album",
+      "title": "相册",
+      "modules": [
+        {
+          "type": "photo",
+          "photo": "album",
+          "ratio": 1.5
+        },
+        {
+          "type": "intro",
+          "eyebrow": "OUR DAY, YOUR VIEW",
+          "title": "把此刻，留给我们。",
+          "subtitle": "{{date}}"
+        },
+        {
+          "type": "button",
+          "text": "＋ 分享喜悦瞬间",
+          "page": "upload"
+        },
+        {
+          "type": "gallery",
+          "items": [
+            {
+              "photo": "portrait",
+              "signature": "亲友署名",
+              "caption": "祝福文案",
+              "ratio": 0.6666666666666666
+            },
+            {
+              "photo": "wide",
+              "signature": "亲友署名",
+              "caption": "照片说明",
+              "ratio": 1.5
+            },
+            {
+              "photo": "detail",
+              "signature": "亲友署名",
+              "ratio": 0.6666666666666666
+            },
+            {
+              "photo": "album",
+              "signature": "亲友署名",
+              "ratio": 1.5
+            }
+          ],
+          "filters": [
+            "我的视角",
+            "宾客花絮",
+            {
+              "label": "新人合照",
+              "page": "portraits"
+            }
+          ]
+        },
+        {
+          "type": "intro",
+          "title": "留一张，属于你的拍立得",
+          "eyebrow": "A LITTLE KEEPSAKE"
+        },
+        {
+          "type": "frame",
+          "orientation": "portrait",
+          "photo": "detail",
+          "signature": "亲友署名",
+          "caption": "{{date}}"
+        }
+      ]
+    },
+    {
+      "id": "mine",
+      "title": "我的",
+      "modules": [
+        {
+          "type": "ticket",
+          "number": "编号"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "YOUR LITTLE CORNER",
+          "title": "把你的安排，告诉我们。",
+          "subtitle": "接送信息与照片署名，都在这里。"
+        },
+        {
+          "type": "status",
+          "title": "我的接送信息",
+          "value": "待填写",
+          "page": "arrival"
+        },
+        {
+          "type": "button",
+          "text": "填写接送信息",
+          "page": "arrival"
+        },
+        {
+          "type": "signature",
+          "value": "亲友署名"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "分享今日照片",
+              "text": "留下一份喜悦",
+              "page": "upload"
+            },
+            {
+              "title": "我的上传照片",
+              "text": "看看自己的视角",
+              "page": "album"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "参与现场互动",
+          "secondary": true,
+          "page": "game"
+        },
+        {
+          "type": "button",
+          "text": "转发请柬给亲友",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "opening",
+      "title": "开屏",
+      "group": "启动与登录",
+      "nav": false,
+      "modules": [
+        {
+          "type": "splash",
+          "photo": "opening"
+        }
+      ]
+    },
+    {
+      "id": "auth-login",
+      "title": "登录",
+      "group": "启动与登录",
+      "nav": false,
+      "modules": [
+        {
+          "type": "gate",
+          "stage": "login"
+        }
+      ]
+    },
+    {
+      "id": "auth-answer",
+      "title": "暗号验证",
+      "group": "启动与登录",
+      "nav": false,
+      "modules": [
+        {
+          "type": "gate",
+          "stage": "answer"
+        }
+      ]
+    },
+    {
+      "id": "venue",
+      "title": "婚礼场地",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "THE VENUE",
+          "title": "婚礼场地",
+          "subtitle": "宴会安排与到场指南"
+        },
+        {
+          "type": "photo",
+          "photo": "wide",
+          "ratio": 1.6
+        },
+        {
+          "type": "panel",
+          "title": "宴会厅",
+          "text": "{{address}}\n入口、楼层与停车提示",
+          "actions": [
+            "打开地图",
+            "复制地址与路线"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "当天安排",
+          "text": "迎宾 · 仪式 · 宴请\n各环节的时间与地点"
+        },
+        {
+          "type": "note",
+          "text": "如在路上遇到问题，可以联系现场联络人：{{contact}}"
+        },
+        {
+          "type": "button",
+          "text": "联系现场联络人",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "title": "住宿安排",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "STAY WITH US",
+          "title": "为你安排的住宿",
+          "subtitle": "入住信息与小提醒"
+        },
+        {
+          "type": "art",
+          "label": "HOTEL"
+        },
+        {
+          "type": "panel",
+          "title": "酒店名称",
+          "text": "酒店地址\n入住时间与房型说明",
+          "actions": [
+            "打开酒店地图",
+            "复制地址与路线",
+            "拨打电话"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "温馨提醒",
+          "text": "退房时间、早餐与周边交通提示"
+        },
+        {
+          "type": "note",
+          "text": "房间由新人统一预留，入住时报新人或宾客姓名即可。"
+        }
+      ]
+    },
+    {
+      "id": "meetup",
+      "title": "集合地点",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "MEETING POINT",
+          "title": "亲友集合地点",
+          "subtitle": "集合区域与集合时间"
+        },
+        {
+          "type": "art",
+          "label": "MEETING POINT"
+        },
+        {
+          "type": "panel",
+          "title": "集合区域",
+          "text": "房间号或集合区域\n集合时间"
+        },
+        {
+          "type": "panel",
+          "title": "出发安排",
+          "text": "车辆与出发时间"
+        },
+        {
+          "type": "note",
+          "text": "如需接送，请先在到达登记里告诉我们。"
+        }
+      ]
+    },
+    {
+      "id": "stations",
+      "title": "抵达指南",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "GETTING HERE",
+          "title": "抵达指南",
+          "subtitle": "推荐车站、机场与自驾目的地"
+        },
+        {
+          "type": "art",
+          "label": "GETTING HERE"
+        },
+        {
+          "type": "panel",
+          "title": "高铁 / 火车",
+          "text": "推荐车站与出站方式",
+          "actions": [
+            "打开地图"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "飞机",
+          "text": "推荐机场与到场交通",
+          "actions": [
+            "打开地图"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "自驾",
+          "text": "导航目的地与停车提示",
+          "actions": [
+            "复制导航地址"
+          ]
+        },
+        {
+          "type": "note",
+          "text": "路线仅为示意，请以实时导航为准。"
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "title": "这座城",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "OUR CITY",
+          "title": "我们喜欢的这座城",
+          "subtitle": "推荐小店、公园与散步路线"
+        },
+        {
+          "type": "photo",
+          "photo": "album",
+          "ratio": 1.1
+        },
+        {
+          "type": "panel",
+          "title": "推荐小店",
+          "text": "咖啡、甜点与手作小店",
+          "actions": [
+            "打开地图"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "公园与绿地",
+          "text": "适合饭后散步的地方",
+          "actions": [
+            "打开地图"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "散步路线",
+          "text": "从场地出发的小路线"
+        },
+        {
+          "type": "note",
+          "text": "不赶行程，慢慢逛。"
+        }
+      ]
+    },
+    {
+      "id": "pickup",
+      "title": "我的接送",
+      "group": "赴约详情",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "MY PICK-UP",
+          "title": "我的接送安排",
+          "subtitle": "根据你登记的到达信息安排"
+        },
+        {
+          "type": "art",
+          "label": "PICK-UP"
+        },
+        {
+          "type": "panel",
+          "title": "到达站点",
+          "text": "到达时间 · 同行人数 · 接送方式"
+        },
+        {
+          "type": "note",
+          "text": "行程有变化，请回到“我的”页修改到达信息。"
+        },
+        {
+          "type": "button",
+          "text": "去“我的”修改到达信息",
+          "secondary": true,
+          "page": "mine"
+        }
+      ]
+    },
+    {
+      "id": "rsvp",
+      "title": "赴约回执",
+      "group": "回执与登记",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "RSVP",
+          "title": "请告诉我们，你会来吗？",
+          "subtitle": "先回复是否来，交通安排稍后再补。"
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "你的姓名",
+              "placeholder": "好让我们为你留位"
+            },
+            {
+              "label": "这次相聚",
+              "placeholder": "请选择",
+              "select": true
+            },
+            {
+              "label": "出席人数",
+              "placeholder": "1"
+            },
+            {
+              "label": "是否需要住宿",
+              "placeholder": "请选择",
+              "select": true
+            },
+            {
+              "label": "还有什么想告诉我们（选填）",
+              "placeholder": "饮食忌口、同行小朋友……",
+              "multiline": true
+            }
+          ],
+          "button": "提交回执"
+        },
+        {
+          "type": "note",
+          "text": "回执会发送给新人，用来安排席位与住宿。"
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "title": "到达登记",
+      "group": "回执与登记",
+      "parent": "mine",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "ARRIVAL DETAILS",
+          "title": "告诉我们你几时到",
+          "subtitle": "行程未定也没关系，确定后再来补充。"
+        },
+        {
+          "type": "actions",
+          "items": [
+            {
+              "label": "看看推荐的到达方式",
+              "page": "stations"
+            }
+          ]
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "怎么称呼你",
+              "placeholder": "你的姓名"
+            },
+            {
+              "label": "联系方式",
+              "placeholder": "只用于接送协调"
+            },
+            {
+              "label": "到达方式",
+              "placeholder": "请选择",
+              "select": true
+            },
+            {
+              "label": "到达站点 / 机场",
+              "placeholder": "车站名或航站楼"
+            },
+            {
+              "label": "到达日期",
+              "placeholder": "选择日期",
+              "select": true,
+              "half": true
+            },
+            {
+              "label": "到达时间",
+              "placeholder": "选择时间",
+              "select": true,
+              "half": true
+            },
+            {
+              "label": "同行人数",
+              "placeholder": "1"
+            },
+            {
+              "label": "是否需要接送",
+              "placeholder": "请选择",
+              "select": true
+            },
+            {
+              "label": "备注（选填）",
+              "placeholder": "车次/航班、行李、儿童座椅等",
+              "multiline": true
+            }
+          ],
+          "button": "提交行程信息"
+        },
+        {
+          "type": "note",
+          "text": "这些信息只用于协调接送，仅你和接送协调人员可见。"
+        }
+      ]
+    },
+    {
+      "id": "upload",
+      "title": "分享照片",
+      "group": "相册与互动",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "SHARE A MOMENT",
+          "title": "把这一刻，做成拍立得。",
+          "subtitle": "选一张照片，会自动套上相框。"
+        },
+        {
+          "type": "actions",
+          "inline": true,
+          "items": [
+            {
+              "label": "拍一张"
+            },
+            {
+              "label": "从相册选择"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "orientation": "portrait",
+          "photo": "detail",
+          "signature": "亲友署名"
+        },
+        {
+          "type": "signature",
+          "value": "亲友署名"
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "写一句话（选填）",
+              "placeholder": "今天最难忘的瞬间……",
+              "multiline": true
+            }
+          ],
+          "button": "制作拍立得并分享",
+          "page": "upload-done"
+        },
+        {
+          "type": "note",
+          "text": "照片会分享给参加婚礼的亲友，请先征得被拍摄者的同意。"
+        }
+      ]
+    },
+    {
+      "id": "upload-done",
+      "title": "分享成功",
+      "group": "相册与互动",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "ALL SET",
+          "title": "收到了，谢谢你的这份快乐！"
+        },
+        {
+          "type": "frame",
+          "orientation": "landscape",
+          "photo": "wide",
+          "signature": "亲友署名"
+        },
+        {
+          "type": "actions",
+          "items": [
+            {
+              "label": "把拍立得存到手机相册"
+            },
+            {
+              "label": "去共享相册逛逛",
+              "primary": true,
+              "page": "album"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portraits",
+      "title": "新人合照",
+      "group": "相册与互动",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "THE WEDDING PORTRAITS",
+          "title": "这一天的合影。",
+          "subtitle": "点开照片可放大，也能保存原图。"
+        },
+        {
+          "type": "gallery",
+          "filters": [],
+          "title": "",
+          "items": [
+            {
+              "photo": "portrait",
+              "ratio": 0.667,
+              "signature": "合照",
+              "action": "保存原图"
+            },
+            {
+              "photo": "wide",
+              "ratio": 1.5,
+              "signature": "合照",
+              "action": "保存原图"
+            },
+            {
+              "photo": "detail",
+              "ratio": 0.667,
+              "signature": "合照",
+              "action": "保存原图"
+            },
+            {
+              "photo": "album",
+              "ratio": 1.5,
+              "signature": "合照",
+              "action": "保存原图"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "更多合照",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "game",
+      "title": "互动游戏",
+      "group": "相册与互动",
+      "parent": "mine",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "SEND A BLESSING",
+          "title": "为新人送上心动。",
+          "subtitle": "不比速度，每份祝福都算数。"
+        },
+        {
+          "type": "heart"
+        },
+        {
+          "type": "button",
+          "text": "开始体验"
+        },
+        {
+          "type": "button",
+          "text": "查看我的祝福",
+          "secondary": true
+        },
+        {
+          "type": "note",
+          "text": "这里是演示效果。现场同步互动需要另行开发。"
+        }
+      ]
+    }
+  ]
+}

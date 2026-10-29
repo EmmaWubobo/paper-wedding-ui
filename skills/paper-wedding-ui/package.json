@@ -1,0 +1,26 @@
+{
+  "name": "paper-wedding-ui",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Configurable wedding mini-program UI blueprints",
+  "scripts": {
+    "render": "node scripts/render.cjs --config examples/template.json --out output",
+    "render:en": "node scripts/render.cjs --config examples/template.en.json --out output-en",
+    "preview": "node scripts/render.cjs --config examples/preview.json --out output-preview",
+    "test": "node scripts/test.cjs",
+    "preview:en": "node scripts/render.cjs --config examples/preview.en.json --out output-preview-en"
+  },
+  "dependencies": {
+    "playwright": "1.62.1"
+  },
+  "author": "Emma <m1559_e0fbouvmrf@aka.yeah.net> (https://github.com/EmmaWubobo)",
+  "license": "MIT",
+  "homepage": "https://github.com/EmmaWubobo/paper-wedding-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaWubobo/paper-wedding-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EmmaWubobo/paper-wedding-ui/issues"
+  }
+}

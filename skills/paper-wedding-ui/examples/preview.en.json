@@ -1,0 +1,923 @@
+{
+  "project": "Paper Wedding UI",
+  "locale": "en",
+  "width": 390,
+  "scale": 3,
+  "people": {
+    "male": "Name (Partner 1)",
+    "female": "Name (Partner 2)",
+    "english": "Name & Name"
+  },
+  "date": "Wedding date",
+  "address": "Venue address",
+  "contact": "Contact info",
+  "previewPhotos": true,
+  "photos": {
+    "portrait": "demo:portrait",
+    "detail": "demo:detail",
+    "wide": "demo:wide",
+    "album": "demo:album",
+    "opening": "demo:opening"
+  },
+  "navigation": [
+    {
+      "id": "invitation",
+      "label": "Invitation",
+      "icon": "✉"
+    },
+    {
+      "id": "travel",
+      "label": "Getting Here",
+      "icon": "⌂"
+    },
+    {
+      "id": "album",
+      "label": "Album",
+      "icon": "▧"
+    },
+    {
+      "id": "mine",
+      "label": "Me",
+      "icon": "♧"
+    }
+  ],
+  "pages": [
+    {
+      "id": "invitation",
+      "title": "Invitation",
+      "modules": [
+        {
+          "type": "hero"
+        },
+        {
+          "type": "story",
+          "lines": [
+            "Write the story of how you met here.",
+            "Write a few words you’d like to share with family and friends."
+          ],
+          "motto": "Love, written together.",
+          "photo": "portrait"
+        },
+        {
+          "type": "date",
+          "photo": "detail",
+          "note": "A short line about your story"
+        },
+        {
+          "type": "timeline",
+          "items": [
+            {
+              "time": "Time",
+              "title": "Guest arrival",
+              "note": "Where to check in"
+            },
+            {
+              "time": "Time",
+              "title": "Ceremony",
+              "note": "Notes about the ceremony"
+            },
+            {
+              "time": "Time",
+              "title": "Reception begins",
+              "note": "Notes about the reception"
+            }
+          ]
+        },
+        {
+          "type": "photo",
+          "photo": "wide",
+          "ratio": 1.5
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "title": "Where we’ll gather",
+              "note": "{{address}}",
+              "page": "venue"
+            },
+            {
+              "title": "A good night’s sleep",
+              "note": "Hotel name and check-in details",
+              "page": "hotel"
+            },
+            {
+              "title": "Beyond the wedding",
+              "note": "Places to visit and walks to take",
+              "page": "city"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "Accept the invitation · Let us know you’re coming",
+          "page": "travel"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "title": "Getting Here",
+      "modules": [
+        {
+          "type": "intro",
+          "eyebrow": "ON YOUR WAY",
+          "title": "You’ve come a long way.",
+          "subtitle": "Where to stay and how to get here — all in one place."
+        },
+        {
+          "type": "status",
+          "title": "RSVP · Arrival details",
+          "value": "To be filled",
+          "page": "rsvp"
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "title": "Wedding venue",
+              "note": "{{address}}",
+              "page": "venue"
+            },
+            {
+              "title": "Where you’ll stay",
+              "note": "Hotel name, check-in time",
+              "page": "hotel"
+            },
+            {
+              "title": "Meeting point",
+              "note": "Meeting address and time",
+              "page": "meetup"
+            },
+            {
+              "title": "Arrival guide",
+              "note": "Recommended stations, airports and parking",
+              "page": "stations"
+            },
+            {
+              "title": "Our favorite city spots",
+              "note": "Shops, parks and walking routes",
+              "page": "city"
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "If you need a ride or any special care, let us know in the arrival form. Contact: {{contact}}"
+        },
+        {
+          "type": "button",
+          "text": "See my pick-up plan",
+          "secondary": true,
+          "page": "pickup"
+        },
+        {
+          "type": "form",
+          "title": "Pick-up details",
+          "fields": [
+            {
+              "label": "Name",
+              "placeholder": "Guest name"
+            },
+            {
+              "label": "Contact",
+              "placeholder": "Guest contact"
+            },
+            {
+              "label": "Arrival time and station",
+              "placeholder": "Date, time, station"
+            },
+            {
+              "label": "Notes",
+              "placeholder": "Party size and other needs",
+              "multiline": true
+            }
+          ],
+          "button": "Submit pick-up details"
+        }
+      ]
+    },
+    {
+      "id": "album",
+      "title": "Album",
+      "modules": [
+        {
+          "type": "photo",
+          "photo": "album",
+          "ratio": 1.5
+        },
+        {
+          "type": "intro",
+          "eyebrow": "OUR DAY, YOUR VIEW",
+          "title": "Leave this moment with us.",
+          "subtitle": "{{date}}"
+        },
+        {
+          "type": "button",
+          "text": "+ Share a happy moment",
+          "page": "upload"
+        },
+        {
+          "type": "gallery",
+          "items": [
+            {
+              "photo": "portrait",
+              "signature": "Guest name",
+              "caption": "A wish for the couple",
+              "ratio": 0.6666666666666666
+            },
+            {
+              "photo": "wide",
+              "signature": "Guest name",
+              "caption": "Photo caption",
+              "ratio": 1.5
+            },
+            {
+              "photo": "detail",
+              "signature": "Guest name",
+              "ratio": 0.6666666666666666
+            },
+            {
+              "photo": "album",
+              "signature": "Guest name",
+              "ratio": 1.5
+            }
+          ],
+          "filters": [
+            "My View",
+            "Guest Moments",
+            {
+              "label": "Couple Photos",
+              "page": "portraits"
+            }
+          ]
+        },
+        {
+          "type": "intro",
+          "eyebrow": "A LITTLE KEEPSAKE",
+          "title": "Keep a Polaroid of your own"
+        },
+        {
+          "type": "frame",
+          "orientation": "portrait",
+          "photo": "detail",
+          "signature": "Guest name",
+          "caption": "{{date}}"
+        }
+      ]
+    },
+    {
+      "id": "mine",
+      "title": "Me",
+      "modules": [
+        {
+          "type": "ticket",
+          "number": "No. 001"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "YOUR LITTLE CORNER",
+          "title": "Tell us your plans.",
+          "subtitle": "Your pick-up details and photo signature live here."
+        },
+        {
+          "type": "status",
+          "title": "My pick-up details",
+          "value": "To be filled",
+          "page": "arrival"
+        },
+        {
+          "type": "button",
+          "text": "Fill in pick-up details",
+          "page": "arrival"
+        },
+        {
+          "type": "signature",
+          "value": "Guest name"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Share today’s photos",
+              "text": "Leave a little joy",
+              "page": "upload"
+            },
+            {
+              "title": "My uploads",
+              "text": "See your own view",
+              "page": "album"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "Join the live game",
+          "secondary": true,
+          "page": "game"
+        },
+        {
+          "type": "button",
+          "text": "Forward the invitation to friends",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "opening",
+      "title": "Opening",
+      "group": "Launch & sign-in",
+      "nav": false,
+      "modules": [
+        {
+          "type": "splash",
+          "photo": "opening"
+        }
+      ]
+    },
+    {
+      "id": "auth-login",
+      "title": "Sign in",
+      "group": "Launch & sign-in",
+      "nav": false,
+      "modules": [
+        {
+          "type": "gate",
+          "stage": "login"
+        }
+      ]
+    },
+    {
+      "id": "auth-answer",
+      "title": "Password",
+      "group": "Launch & sign-in",
+      "nav": false,
+      "modules": [
+        {
+          "type": "gate",
+          "stage": "answer"
+        }
+      ]
+    },
+    {
+      "id": "venue",
+      "title": "Venue",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "THE VENUE",
+          "title": "Wedding venue",
+          "subtitle": "The plan for the day and how to find us"
+        },
+        {
+          "type": "photo",
+          "photo": "wide",
+          "ratio": 1.6
+        },
+        {
+          "type": "panel",
+          "title": "Reception hall",
+          "text": "{{address}}\nEntrance, floor and parking tips",
+          "actions": [
+            "Open in maps",
+            "Copy address and directions"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "The day’s plan",
+          "text": "Welcome · Ceremony · Dinner\nTimes and places for each part"
+        },
+        {
+          "type": "note",
+          "text": "If you run into trouble on the way, contact our host: {{contact}}"
+        },
+        {
+          "type": "button",
+          "text": "Contact our host",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "title": "Stay",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "STAY WITH US",
+          "title": "Where you’ll stay",
+          "subtitle": "Check-in time, address and friendly reminders"
+        },
+        {
+          "type": "art",
+          "label": "HOTEL"
+        },
+        {
+          "type": "panel",
+          "title": "Hotel name",
+          "text": "Hotel address\nCheck-in time and room notes",
+          "actions": [
+            "Open hotel in maps",
+            "Copy address and directions",
+            "Call the hotel"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Good to know",
+          "text": "Check-out time, breakfast and nearby transport"
+        },
+        {
+          "type": "note",
+          "text": "Rooms are held by the couple; give either name at check-in."
+        }
+      ]
+    },
+    {
+      "id": "meetup",
+      "title": "Meeting point",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "MEETING POINT",
+          "title": "Where we gather",
+          "subtitle": "The meeting area and time"
+        },
+        {
+          "type": "art",
+          "label": "MEETING POINT"
+        },
+        {
+          "type": "panel",
+          "title": "Meeting area",
+          "text": "Room number or meeting area\nMeeting time"
+        },
+        {
+          "type": "panel",
+          "title": "Departure",
+          "text": "Vehicles and departure time"
+        },
+        {
+          "type": "note",
+          "text": "If you need a ride, tell us in the arrival form."
+        }
+      ]
+    },
+    {
+      "id": "stations",
+      "title": "Arrival guide",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "GETTING HERE",
+          "title": "Arrival guide",
+          "subtitle": "Stations, airports and driving destinations"
+        },
+        {
+          "type": "art",
+          "label": "GETTING HERE"
+        },
+        {
+          "type": "panel",
+          "title": "Train",
+          "text": "Recommended station and exit",
+          "actions": [
+            "Open in maps"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Plane",
+          "text": "Recommended airport and transfer",
+          "actions": [
+            "Open in maps"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Driving",
+          "text": "Navigation destination and parking",
+          "actions": [
+            "Copy navigation address"
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Routes are illustrative; follow live navigation."
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "title": "Our city",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "OUR CITY",
+          "title": "Our favorite city spots",
+          "subtitle": "Shops, parks and walking routes"
+        },
+        {
+          "type": "photo",
+          "photo": "album",
+          "ratio": 1.1
+        },
+        {
+          "type": "panel",
+          "title": "Little shops",
+          "text": "Coffee, sweets and handmade finds",
+          "actions": [
+            "Open in maps"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Parks and green spaces",
+          "text": "Good for an after-dinner stroll",
+          "actions": [
+            "Open in maps"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "A walking route",
+          "text": "A short route from the venue"
+        },
+        {
+          "type": "note",
+          "text": "No rush. Wander slowly."
+        }
+      ]
+    },
+    {
+      "id": "pickup",
+      "title": "My pick-up",
+      "group": "Visit details",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "MY PICK-UP",
+          "title": "My pick-up plan",
+          "subtitle": "Based on the arrival details you submitted"
+        },
+        {
+          "type": "art",
+          "label": "PICK-UP"
+        },
+        {
+          "type": "panel",
+          "title": "Arrival station",
+          "text": "Arrival time · Party size · Pick-up method"
+        },
+        {
+          "type": "note",
+          "text": "If plans change, update your arrival details on the Me page."
+        },
+        {
+          "type": "button",
+          "text": "Update details on the Me page",
+          "secondary": true,
+          "page": "mine"
+        }
+      ]
+    },
+    {
+      "id": "rsvp",
+      "title": "RSVP",
+      "group": "RSVP & arrival forms",
+      "parent": "travel",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "RSVP",
+          "title": "Will you be joining us?",
+          "subtitle": "Let us know first; travel details can come later."
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "Your name",
+              "placeholder": "So we can save you a seat"
+            },
+            {
+              "label": "Your reply",
+              "placeholder": "Please choose",
+              "select": true
+            },
+            {
+              "label": "Number of guests",
+              "placeholder": "1"
+            },
+            {
+              "label": "Need a room?",
+              "placeholder": "Please choose",
+              "select": true
+            },
+            {
+              "label": "Anything we should know (optional)",
+              "placeholder": "Dietary needs, children, lodging…",
+              "multiline": true
+            }
+          ],
+          "button": "Send my reply"
+        },
+        {
+          "type": "note",
+          "text": "Your reply goes to the couple so they can plan seats and rooms."
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "title": "Arrival details",
+      "group": "RSVP & arrival forms",
+      "parent": "mine",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "ARRIVAL DETAILS",
+          "title": "Tell us when you arrive",
+          "subtitle": "Plans not final? Come back and fill it in later."
+        },
+        {
+          "type": "actions",
+          "items": [
+            {
+              "label": "See recommended stations and driving spots",
+              "page": "stations"
+            }
+          ]
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "What should we call you",
+              "placeholder": "Your name"
+            },
+            {
+              "label": "Contact",
+              "placeholder": "Only used for pick-up coordination"
+            },
+            {
+              "label": "How you’ll arrive",
+              "placeholder": "Please choose",
+              "select": true
+            },
+            {
+              "label": "Arrival station / airport",
+              "placeholder": "Station name or terminal"
+            },
+            {
+              "label": "Arrival date",
+              "placeholder": "Pick a date",
+              "select": true,
+              "half": true
+            },
+            {
+              "label": "Arrival time",
+              "placeholder": "Pick a time",
+              "select": true,
+              "half": true
+            },
+            {
+              "label": "Party size",
+              "placeholder": "1"
+            },
+            {
+              "label": "Need a pick-up?",
+              "placeholder": "Please choose",
+              "select": true
+            },
+            {
+              "label": "Notes (optional)",
+              "placeholder": "Train or flight number, luggage, child seat",
+              "multiline": true
+            }
+          ],
+          "button": "Submit my trip"
+        },
+        {
+          "type": "note",
+          "text": "Visible only to you and the people coordinating pick-ups."
+        }
+      ]
+    },
+    {
+      "id": "upload",
+      "title": "Share a photo",
+      "group": "Album & play",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "SHARE A MOMENT",
+          "title": "Turn this moment into a Polaroid.",
+          "subtitle": "Pick a photo and it gets a portrait or landscape frame."
+        },
+        {
+          "type": "actions",
+          "inline": true,
+          "items": [
+            {
+              "label": "Take a photo"
+            },
+            {
+              "label": "Choose from album"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "orientation": "portrait",
+          "photo": "detail",
+          "signature": "Guest name"
+        },
+        {
+          "type": "signature",
+          "value": "Guest name"
+        },
+        {
+          "type": "form",
+          "title": "",
+          "fields": [
+            {
+              "label": "Add a line (optional)",
+              "placeholder": "My favorite moment today…",
+              "multiline": true
+            }
+          ],
+          "button": "Create Polaroid and share",
+          "page": "upload-done"
+        },
+        {
+          "type": "note",
+          "text": "Photos are shared with this wedding’s guests; make sure everyone pictured is happy to be shared."
+        }
+      ]
+    },
+    {
+      "id": "upload-done",
+      "title": "Shared",
+      "group": "Album & play",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "ALL SET",
+          "title": "Got it — thank you for the joy!"
+        },
+        {
+          "type": "frame",
+          "orientation": "landscape",
+          "photo": "wide",
+          "signature": "Guest name"
+        },
+        {
+          "type": "actions",
+          "items": [
+            {
+              "label": "Save Polaroid to photos"
+            },
+            {
+              "label": "See the shared album",
+              "primary": true,
+              "page": "album"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "portraits",
+      "title": "Couple photos",
+      "group": "Album & play",
+      "parent": "album",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "THE WEDDING PORTRAITS",
+          "title": "Portraits from the day.",
+          "subtitle": "Tap a photo to enlarge it, save the original, take it home."
+        },
+        {
+          "type": "gallery",
+          "filters": [],
+          "title": "",
+          "items": [
+            {
+              "photo": "portrait",
+              "ratio": 0.667,
+              "signature": "Portrait",
+              "action": "Save original"
+            },
+            {
+              "photo": "wide",
+              "ratio": 1.5,
+              "signature": "Portrait",
+              "action": "Save original"
+            },
+            {
+              "photo": "detail",
+              "ratio": 0.667,
+              "signature": "Portrait",
+              "action": "Save original"
+            },
+            {
+              "photo": "album",
+              "ratio": 1.5,
+              "signature": "Portrait",
+              "action": "Save original"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "text": "Load more portraits",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "game",
+      "title": "Play",
+      "group": "Album & play",
+      "parent": "mine",
+      "modules": [
+        {
+          "type": "back"
+        },
+        {
+          "type": "intro",
+          "eyebrow": "SEND A BLESSING",
+          "title": "Send the couple a little joy.",
+          "subtitle": "No racing — every blessing counts."
+        },
+        {
+          "type": "heart"
+        },
+        {
+          "type": "button",
+          "text": "Start"
+        },
+        {
+          "type": "button",
+          "text": "See my blessings",
+          "secondary": true
+        },
+        {
+          "type": "note",
+          "text": "This is a demo. Live shared play needs separate development."
+        }
+      ]
+    }
+  ]
+}
