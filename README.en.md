@@ -111,9 +111,9 @@ skills/paper-wedding-ui/
 
 ## Author
 
-Designed and curated by Emma (GitHub: [@EmmaWubobo](https://github.com/EmmaWubobo)).
-Contact: m1559_e0fbouvmrf@aka.yeah.net
-Built with AI assistance. Issues and showcases of what you made with it are welcome.
+- Designed and curated by Emma (GitHub: [@EmmaWubobo](https://github.com/EmmaWubobo)).
+- Contact: m1559_e0fbouvmrf@aka.yeah.net
+- Built with AI assistance. Issues and showcases of what you made with it are welcome.
 
 ## License
 

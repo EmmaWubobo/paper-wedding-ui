@@ -115,12 +115,12 @@ skills/paper-wedding-ui/
 
 ## 作者
 
-设计与整理：Emma（GitHub：[@EmmaWubobo](https://github.com/EmmaWubobo)）
-联系：m1559_e0fbouvmrf@aka.yeah.net
-本项目由AI辅助实现。欢迎在Issues里反馈问题，或分享你用它做出的设计。
+- 设计与整理：Emma（GitHub：[@EmmaWubobo](https://github.com/EmmaWubobo)）
+- 联系：m1559_e0fbouvmrf@aka.yeah.net
+- 本项目由AI辅助实现。欢迎在 Issues 里反馈问题，或分享你用它做出的设计。
 
-## 分享到GitHub
+## 许可与素材
 
-只上传本仓库目录，不上传自己的婚礼部署工程。保留LICENSE、ASSETS.md和字体OFL许可证。私人配置及新项目照片请放在仓库之外；不要把真实宾客数据、密钥、云环境或历史日志加入仓库。
+代码和文档采用 MIT 许可（见 [LICENSE](LICENSE)）；预览照片单独说明，见 [ASSETS.md](ASSETS.md)；内置字体按 SIL OFL。
 
-代码和文档采用MIT许可；预览照片单独说明，字体按OFL。仓库未配置任何原作者API、AppID或云环境。更新记录见[CHANGELOG](CHANGELOG.md)。
+使用时，请把自己的婚礼资料、照片和配置文件放在仓库之外，不要把真实宾客数据、密钥或云环境信息提交到公开仓库。本仓库本身不含任何 API 密钥、AppID 或云环境。更新记录见 [CHANGELOG](CHANGELOG.md)。
