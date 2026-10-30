@@ -1,0 +1,12 @@
+node_modules/
+output/
+output-en/
+output-preview/
+output-preview-en/
+.paper-wedding-*/
+.DS_Store
+Thumbs.db
+*.log
+.env*
+private/
+my-wedding.json
